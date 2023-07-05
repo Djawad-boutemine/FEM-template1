@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+
+.upper {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 45%;
+}
+
+.upper h3 {
+    color: hsl(241, 100%, 89%);
+}
+
+.upper .circle span:first-child {
+    color: white;
+}
+
+.upper .circle span:nth-child(2) {
+    color: hsl(224, 32%, 23%);
+}
+
+.upper h2 {
+    color: white;
+}
+
+.circle {
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.upper p {
+    color: hsl(221, 100%, 96%);
+    text-align: center;
+}
+
+.lower {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.lower h3  {
+    display: inline-block;
+}
+
+.info {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+
+.info div  span:first-child {
+    color : initial ;
+}
+
+.info div span:nth-child(2) {
+    color : hsl(241, 100%, 89%) ;
+}
+
+.one {
+    color:hsl(0, 100%, 67%) ;
+    background-color: hsla(0, 100%, 67% , 0.05);
+}
+
+.two {
+    color: hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%,0.05);
+}
+
+.three {
+    color: hsl(166, 100%, 37%);
+    background-color:hsla(166, 100%, 37%,0.05) ;
+}
+
+.four {
+    color: hsl(234, 85%, 45%);
+    background-color:hsla(234, 85%, 45%, 0.05);
+}
+img {
+    top : 5px ;
+    position: relative;
+}
+button {
+    /* border-top-left-radius : 10% 50%;
+    border-top-right-radius: 10% 50%;
+    border-bottom-right-radius: 10% 50%;
+    border-bottom-left-radius: 10% 50%; */
+    border-radius: 20px;
+    background-color: hsl(224, 32%, 23%);
+    color : white ;
+}
+
+@media (max-width : 400px ) and (min-width : 375px) {
+    main {
+        max-width: 375px;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+    .upper {
+        border-radius: 0 0 30px 30px;
+        min-width: 375px;
+        height: 45%;
+    }
+    
+    .upper .circle span:first-child {
+        font-size: 55px;
+    }
+    
+    .circle {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+    }
+    
+    .upper p {
+        width: 70%;
+        font-size: 15px;
+    }
+    
+    .lower {
+        min-width: 375px;
+        height: 55%;
+    }
+    .lower h3  {
+        display: inline-block;
+        position: relative;
+        right : 120px ;
+    }
+    
+    .info {
+        border-radius: 13px;
+        width: 80%;
+        height: 60px;
+        padding: 10px;
+    }
+    
+    img {
+        top : 5px ;
+        position: relative;
+    }
+    button {
+        width : 80% ;
+        height: 55px;
+        border-top-left-radius : 10% 50%;
+        border-top-right-radius: 10% 50%;
+        border-bottom-right-radius: 10% 50%;
+        border-bottom-left-radius: 10% 50%;
+    }
+}
+@media ( min-width : 401px ) {
+    main {
+        position: absolute;
+        top : 50% ;
+        left : 50% ;
+        transform: translate(-50%,-50%);
+        border-radius: 20px;
+        box-shadow: 2px 5px 11px 0 rgb(221, 224, 255) ;
+        width: 600px ;
+        height : 400px ;
+        display: flex;
+    }
+    .upper {
+        width : 50% ;
+        height: 100%;
+        border-radius: 20px;
+    }
+    .upper .circle span:first-child {
+        font-size: 55px;
+    }
+    
+    .circle {
+        width : 140px ;
+        height: 140px;
+    }
+    .upper p {
+        width : 70% ;
+        font-size: 14px;
+    }
+    .lower {
+        height: 100%;
+        width: 50%;
+    }
+    .info {
+        width: 80%;
+        height: 45px;
+        padding: 5px;
+        border-radius: 15px;
+    }
+    button {
+        width: 80%;
+        height: 40px;
+    }
+
+    button:hover {
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    }
+    
+}
